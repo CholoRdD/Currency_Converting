@@ -46,12 +46,12 @@
         overflow-scroll overflow-x-hidden rounded-b-2xl border-2 border-green-900 bg-transparent text-white"
 		>
 			{#each filterFrom as code}
-				<button
-					class="h-10 w-full border-blue-800 hover:bg-green-800 {selectFrom === code
-						? `bg-green-600 font-bold`
-						: ``}"
-					on:click={() => selectBtn(`from`, code)}>{code}</button
-				>
+            <button
+            class="h-10 w-full border-blue-800 hover:bg-green-600 active:bg-green-400 active:border-2 active:border-green-600 hover:font-bold {selectTo === code
+                ? `bg-green-600 font-bold`
+                : ``} transition-all duration-200"
+            on:click={() => selectBtn(`from`, code)}>{code}</button
+        >
 			{/each}
 		</div>
 	</div>
