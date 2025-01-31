@@ -47,7 +47,7 @@
 		>
 			{#each filterFrom as code}
             <button
-            class="h-10 w-full border-blue-800 hover:bg-green-600 active:bg-green-400 active:border-2 active:border-green-600 hover:font-bold {selectTo === code
+            class="h-10 w-full border-blue-800 hover:bg-green-600 active:bg-green-400 active:border-2 active:border-green-600 hover:font-bold {selectFrom === code
                 ? `bg-green-600 font-bold`
                 : ``} transition-all duration-200"
             on:click={() => selectBtn(`from`, code)}>{code}</button
