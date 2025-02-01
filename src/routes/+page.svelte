@@ -59,8 +59,8 @@
 							on:keydown={(e) => e.key === `Enter` && Convert()}
 						/>
 						<button
-							class="flex w-[75px] items-center justify-center rounded-2xl border-2 border-green-900 text-3xl hover:border-green-600 hover:bg-green-900"
-							on:click={() => Convert()}>♻</button
+							class="flex w-[75px] items-center justify-center rounded-2xl text-green-600 border-2 border-green-900 text-3xl hover:border-green-600 hover:bg-green-900"
+							on:click={() => Convert()}>⇄</button
 						>
 					</div>
 					<CurrencyList bind:selectTo={toConvert} bind:selectFrom={fromConvert} />

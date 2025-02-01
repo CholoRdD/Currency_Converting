@@ -9,7 +9,7 @@
 	let searchFrom = '';
 	let searchTo = '';
 
-	// Filtered arrays for the buttons
+	// Filtered arrays for the button searching
 	$: filterFrom = currency.filter((code) =>
 		code.toLowerCase().includes(searchFrom.toLowerCase())
 	);
