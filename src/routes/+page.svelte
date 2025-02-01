@@ -40,14 +40,16 @@
 	}
 </script>
 
-<div class="md:flex min-h-screen flex-row bg-gradient-to-tr from-black to-green-900 items-center justify-center">
+<div
+	class="min-h-screen flex-row items-center justify-center bg-gradient-to-tr from-black to-green-900 md:flex"
+>
 	<div>
 		<Header />
 	</div>
 	<div
-		class="md:mx-10 mx-8 md:my-12 flex md:h-[85vh] w-[85vw] flex-row rounded-3xl border-2 border-green-700 bg-black bg-opacity-30 md:p-12 p-4"
+		class="mx-8 flex w-[85vw] flex-row rounded-3xl border-2 border-green-700 bg-black bg-opacity-30 p-4 md:mx-10 md:my-12 md:h-[85vh] md:p-12"
 	>
-		<div class="flex md:flex-row flex-col gap-5 items-center justify-center">
+		<div class="flex flex-col items-center justify-center gap-5 md:flex-row">
 			<div>
 				<div class="flex flex-col gap-4">
 					<div class="flex flex-row gap-2">
@@ -55,11 +57,11 @@
 							type="text"
 							bind:value={valueInput}
 							placeholder="Enter amount to be converted"
-							class="h-16 md:w-[320px] w-[52vw] rounded-2xl border-2 border-green-900 bg-transparent text-xl text-green-500 hover:border-green-500 focus:border-green-500"
+							class="h-16 w-[52vw] rounded-2xl border-2 border-green-900 bg-transparent text-xl text-green-500 hover:border-green-500 focus:border-green-500 md:w-[320px]"
 							on:keydown={(e) => e.key === `Enter` && Convert()}
 						/>
 						<button
-							class="flex w-[75px] items-center justify-center rounded-2xl text-green-600 border-2 border-green-900 text-3xl hover:border-green-600 hover:bg-green-900"
+							class="flex w-[75px] items-center justify-center rounded-2xl border-2 border-green-900 text-3xl text-green-600 hover:border-green-600 hover:bg-green-900"
 							on:click={() => Convert()}>⇄</button
 						>
 					</div>
